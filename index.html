@@ -1,36 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-with, initial-scale=1, shrink-to-fit=no">
-    <link href="view/css/style.css" rel="stylesheet">
-    <title>JIYE CHOI</title>
-    <link rel="shortcut icon" type="image/png" href="view/images/JC LOGO.png">
-</head>
-<body>
-    <header class="page-header">
-        <nav class="topnav">
-            <div class="header-name">JC</div>
-            <div class="nav-right-items">
-                <a class="active" id="nav-item" href="#home">Home</a>
-                <a id="nav-item" href="#Profile">Profile</a>
-                <a id="nav-item" href="#Project">Project</a>
-                <a id="nav-item" href="#Resume">Resume</a>
-                <a id="nav-item" href="#Contact">Contact</a>
-            </div>
-        </nav>
-    </header>
-    <section class="main-page"> 
-        <div class="main-subtitle">
-            <p>Hello, World!</p>
-        </div>
-        <h1 class="main-title"> JIYE CHOI</h1>
-    </section>
-    <section class="profile-page"> profile</section>
-    <section class="proejct-page"> project</section>
-    <section class="resume-page"> resume </section>
-    <section class="contact-page"> contact me </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="view/css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/01e7612f82.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="view/js/script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <i class="fas fa-laptop-code"></i>
+        <a href="">Jiye Choi</a>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Project</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
 
-</body>
-</html> 
+      <ul class="navbar-icons">
+        <li><i class="fab fa-linkedin"></i></li>
+        <li><i class="fab fa-github-square"></i></li>
+        <li><i class="fab fa-instagram-square"></i></li>
+      </ul>
+
+      <a href="#" class="navbar-togleBtn">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+    <main>
+      <section class="home">
+        <div class="titles">
+          <p class="title 1" style="font-style: italic;">Hello World!</p>
+          <p class="title 2" style="font-weight: bold;">Jiye Choi</p>
+        </div>
+      </section>
+      <section class="profile">
+        <div class="profile-img-container">
+          <img
+            src="view/images/profile_pic.jpg"
+            alt="Profile pic"
+            width="300"
+            height="350"
+          />
+        </div>
+        <div class="profile-info">
+          <h1 style="font-size: 2rem;">
+            <i class="fas fa-user-circle"></i>&nbsp Jiye Choi
+          </h1>
+          <p><i class="fas fa-school"></i>&nbsp University of Massachusetts</p>
+          <p>&nbsp (Expected graduation date : 2020 Fall)</p>
+          <p><i class="fas fa-graduation-cap"></i>&nbsp Computer Science</p>
+          <p><i class="fas fa-home"></i>&nbsp Amherst, MA</p>
+          <p><i class="fas fa-at"></i>&nbsp jiyechoi@umass.edu</p>
+          <a
+            href="src/JIYE CHOI RESUME____.pdf"
+            download="Jiye_Choi_Resume"
+            style="color: black;"
+            ><button type="button" class="resume-download-btn">
+              <i class="fas fa-download"></i>&nbsp Download Resume
+            </button></a
+          >
+        </div>
+        <div class="profile-skill">
+          <h1><i class="fas fa-laptop-code"></i> &nbsp SKILL</h1>
+        </div>
+      </section>
+      <section class="project">
+        <h1><i class="fas fa-file-code"></i> &nbsp Project</h1>
+      </section>
+      <section class="contact">
+        <ul class="contact-icons">
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-github-square"></i></li>
+          <li><i class="fab fa-instagram-square"></i></li>
+          <li><i class="fas fa-at"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      &copy; 2020 Jiye Choi
+    </footer>
+  </body>
+</html>
