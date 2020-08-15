@@ -1,9 +1,97 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 :root {
   --text-color: white;
   --background-color: #11151d;
   --accent-color: #daadb5;
 }
 body {
+  font-size: 1rem;
   margin: 0;
   font-family: "Baloo Tamma 2", cursive;
 }
@@ -76,6 +164,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 30px;
 }
 .profile-img-container {
   padding: 18px 20px;
@@ -99,37 +188,127 @@ a {
 .resume-download-btn:hover {
   color: var(--accent-color);
 }
-.project {
-  text-align: center;
+.skills {
   background-color: var(--accent-color);
-  color: var(--text-color);
-  height: 500px;
+  padding: 5px 10px;
 }
-.contact {
-  background-color: var(--background-color);
-  padding: 20px 20px;
-}
-.contact-icons {
-  list-style: none;
+.skill-container {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
 }
-.contact-icons li {
+.technical-skills {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.soft-skills {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.skill-bar-container {
+  height: 30px;
+  width: 220px;
+  background-color: gray;
+}
+.skill {
+  height: 30px;
+  padding-right: 5px;
+  text-align: right;
   color: var(--text-color);
-  font-size: 2rem;
-  margin-left: 10px;
 }
-.contact-icons li:hover {
+.java {
+  width: 80%;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+.python {
+  width: 70%;
+  background-color: var(--background-color);
+}
+.js {
+  width: 65%;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+.html-css {
+  width: 60%;
+  background-color: var(--background-color);
+}
+.collaboration {
+  width: 90%;
+  background-color: var(--background-color);
+}
+.communication {
+  width: 90%;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+.problem-solving {
+  width: 80%;
+  background-color: var(--background-color);
+}
+.projects {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+}
+.project {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.project h1 {
+  font-size: 2rem;
   color: var(--accent-color);
 }
-
+.interests {
+  padding: 20px 20px;
+}
+.interests h1 {
+  font-size: 2rem;
+}
+.interests-container {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.interest {
+  list-style: none;
+}
+.contact {
+  background-color: var(--accent-color);
+  padding: 20px 20px;
+}
 footer {
   background-color: gray;
   text-align: center;
   padding: 50px 12px;
 }
-
+.footer-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-icons li {
+  color: var(--background-color);
+  font-size: 1rem;
+  margin-left: 10px;
+}
+.footer-icons li:hover {
+  color: var(--accent-color);
+}
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -159,6 +338,10 @@ footer {
     display: flex;
   }
   .profile {
+    flex-direction: column;
+    align-content: center;
+  }
+  .projects-container {
     flex-direction: column;
     justify-content: center;
   }
