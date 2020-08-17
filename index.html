@@ -6,11 +6,11 @@
     <title>repl.it</title>
     <link href="view/css/style.css" rel="stylesheet" type="text/css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,300;1,300&display=swap"
       rel="stylesheet"
     />
     <script
@@ -20,170 +20,291 @@
     <script src="view/js/script.js" defer></script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <i class="fas fa-laptop-code"></i>
-        <a href="">Jiye Choi</a>
-      </div>
-      <ul class="navbar-menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">Profile</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-
-      <ul class="navbar-icons">
-        <li><i class="fab fa-linkedin"></i></li>
-        <li><i class="fab fa-github-square"></i></li>
-        <li><i class="fab fa-instagram-square"></i></li>
-      </ul>
-
-      <a href="#" class="navbar-togleBtn">
-        <i class="fas fa-bars"></i>
-      </a>
-    </nav>
-    <main>
-      <section class="home">
-        <div class="titles">
-          <p class="title 1" style="font-style: italic;">Hello Austin!</p>
-          <p class="title 2" style="font-weight: bold;">Jiye Choi</p>
+    <div class="main-container">
+      <nav class="navbar">
+        <a href="#" class="navbar-togleBtn">
+          <i class="fas fa-bars"></i>
+        </a>
+        <div class="navbar-container">
+          <div class="navbar-logo">
+            <i class="fas fa-laptop-code"></i>
+            <a href="">Jiye Choi</a>
+          </div>
+          <ul class="navbar-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Profile</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <a href="#" class="navbar-download-btn">
+            <i class="fas fa-ellipsis-v"></i>
+          </a>
         </div>
-      </section>
-      <section class="profile">
-        <div class="profile-img-container">
-          <img
-            src="view/images/profile_pic.jpg"
-            alt="Profile pic"
-            width="300"
-            height="350"
-          />
-        </div>
-        <div class="profile-info">
-          <h1 style="font-size: 2rem;">
-            <i class="fas fa-user-circle"></i>&nbsp Jiye Choi
-          </h1>
-          <p>
-            <i class="fas fa-school"></i>&nbsp University of Massachusetts
-            Amherst
-          </p>
-          <p>&nbsp (Expected graduation date : 2020 Fall)</p>
-          <p><i class="fas fa-graduation-cap"></i>&nbsp Computer Science</p>
-          <p><i class="fas fa-home"></i>&nbsp Amherst, MA</p>
-          <p><i class="fas fa-at"></i>&nbsp jiyechoi@umass.edu</p>
-          <a
-            href="src/JIYE CHOI RESUME____.pdf"
-            download="Jiye_Choi_Resume"
-            style="color: black;"
-            ><button type="button" class="resume-download-btn">
-              <i class="fas fa-download"></i>&nbsp Download Resume
-            </button></a
-          >
-        </div>
-      </section>
-      <section class="skills">
-        <h1 style="padding-left: 20px; font-size: 2rem;">Skills</h1>
-        <div class="skill-container">
-          <div class="technical-skills">
-            <h1>Technical Skills</h1>
-            <p>JAVA</p>
-            <div class="skill-bar-container">
-              <div class="skill java">80%</div>
-            </div>
-            <p>Python</p>
-            <div class="skill-bar-container">
-              <div class="skill python">70%</div>
-            </div>
-            <p>JavaScript</p>
-            <div class="skill-bar-container">
-              <div class="skill js">65%</div>
-            </div>
-            <p>HTML CSS</p>
-            <div class="skill-bar-container">
-              <div class="skill html-css">60%</div>
+      </nav>
+      <main>
+        <section class="home">
+          <div class="greets">
+            JIYE CHOI
+          </div>
+        </section>
+        <section class="about">
+          <div class="about-container">
+            <p>About Me</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis id cum consequatur alias facilis rem veritatis
+              necessitatibus modi libero, in totam. Corrupti ut earum nemo,
+              blanditiis numquam dignissimos aut voluptatem?
+            </p>
+          </div>
+        </section>
+        <section class="profile">
+          <div class="profile-img-container">
+            <img
+              src="view/images/profile_pic.jpeg"
+              alt="Profile pic"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="profile-info">
+            <h1 style="font-size: 2rem;">
+              <i class="fas fa-user-circle"></i>&nbsp Jiye Choi
+            </h1>
+            <p class="info">
+              <i class="fas fa-school"></i>&nbsp School : University of
+              Massachusetts Amherst
+            </p>
+            <p class="info">
+              <i class="fas fa-graduation-cap"></i>&nbsp Major : Computer
+              Science
+            </p>
+            <p class="info">
+              <i class="fas fa-home"></i>&nbsp Address : Amherst, MA
+            </p>
+            <p class="info">
+              <i class="fas fa-at"></i>&nbsp Email : jiyechoi@umass.edu
+            </p>
+            <a
+              href="src/JIYE CHOI RESUME____.pdf"
+              download="Jiye_Choi_Resume"
+              style="color: black;"
+              ><button type="button" class="resume-download-btn">
+                <i class="fas fa-download"></i>&nbsp Download Resume
+              </button></a
+            >
+            <div class="profile-icons">
+              <li><i class="fab fa-facebook-square"></i></li>
+              <li><i class="fab fa-github-square"></i></li>
+              <li><i class="fab fa-instagram-square"></i></li>
+              <li><i class="fas fa-at"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
             </div>
           </div>
-          <div class="soft-skills">
-            <h1>Soft Skills</h1>
-            <p>Collaboration</p>
-            <div class="skill-bar-container">
-              <div class="skill collaboration">90%</div>
+        </section>
+        <section class="skills">
+          <h1 style="padding-left: 20px; font-size: 2rem;">Skills</h1>
+          <div class="skill-container">
+            <div class="technical-skills">
+              <h1>Technical Skills</h1>
+              <p>JAVA</p>
+              <div class="skill-bar-container">
+                <div class="skill java">
+                  <p style="padding-top: 5px;">80%</p>
+                </div>
+              </div>
+              <p>Python</p>
+              <div class="skill-bar-container">
+                <div class="skill python">
+                  <p style="padding-top: 5px;">70%</p>
+                </div>
+              </div>
+              <p>JavaScript</p>
+              <div class="skill-bar-container">
+                <div class="skill js"><p style="padding-top: 5px;">65%</p></div>
+              </div>
+              <p>HTML CSS</p>
+              <div class="skill-bar-container">
+                <div class="skill html-css">
+                  <p style="padding-top: 5px;">60%</p>
+                </div>
+              </div>
             </div>
-            <p>Communication</p>
-            <div class="skill-bar-container">
-              <div class="skill communication">90%</div>
-            </div>
-            <p>Problem Solving</p>
-            <div class="skill-bar-container">
-              <div class="skill problem-solving">80%</div>
+            <div class="soft-skills">
+              <h1>Soft Skills</h1>
+              <p>Collaboration</p>
+              <div class="skill-bar-container">
+                <div class="skill collaboration">
+                  <p style="padding-top: 5px;">90%</p>
+                </div>
+              </div>
+              <p>Communication</p>
+              <div class="skill-bar-container">
+                <div class="skill communication">
+                  <p style="padding-top: 5px;">90%</p>
+                </div>
+              </div>
+              <p>Problem Solving</p>
+              <div class="skill-bar-container">
+                <div class="skill problem-solving">
+                  <p style="padding-top: 5px;">80%</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="projects">
-        <h1 style="padding-left:20px; font-size:2rem;"">Projects</h1>
-        <div class="projects-container">
+        </section>
+        <section class="projects">
+          <h1 class="title">Projects</h1>
+          <div class="projects-container">
             <div class="project 1">
-                <h1>Project 1</h1>
-                <div class="project-img-container">
-                    <img src="view/images/project_img" alt="proejct img" width="300px" height="300px">
-                </div>
-                <div class="project-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit aliquid hic illum vero quis maxime perferendis voluptates odit quidem, ipsam esse nisi consequatur suscipit molestiae veritatis a ut aspernatur.</p>
-                </div>
+              <h1>Project 1</h1>
+              <div class="project-img-container">
+                <img
+                  src="view/images/project_img"
+                  alt="proejct img"
+                  width="200px"
+                  height="200px"
+                />
+              </div>
+              <div class="project-description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet velit aliquid hic illum vero quis maxime perferendis
+                  voluptates odit quidem, ipsam esse nisi consequatur suscipit
+                  molestiae veritatis a ut aspernatur.
+                </p>
+              </div>
             </div>
             <div class="project 2">
-                <h1>Project 2</h1>
-                <div class="project-img-container">
-                    <img src="view/images/project_img" alt="proejct img" width="300px" height="300px">
-                </div>
-                <div class="project-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit aliquid hic illum vero quis maxime perferendis voluptates odit quidem, ipsam esse nisi consequatur suscipit molestiae veritatis a ut aspernatur.</p>
-                </div>
+              <h1>Project 2</h1>
+              <div class="project-img-container">
+                <img
+                  src="view/images/project_img"
+                  alt="proejct img"
+                  width="200px"
+                  height="200px"
+                />
+              </div>
+              <div class="project-description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet velit aliquid hic illum vero quis maxime perferendis
+                  voluptates odit quidem, ipsam esse nisi consequatur suscipit
+                  molestiae veritatis a ut aspernatur.
+                </p>
+              </div>
             </div>
             <div class="project 3">
-                <h1>Project 3</h1>
-                <div class="project-img-container">
-                    <img src="view/images/project_img" alt="proejct img" width="300px" height="300px">
-                </div>
-                <div class="project-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit aliquid hic illum vero quis maxime perferendis voluptates odit quidem, ipsam esse nisi consequatur suscipit molestiae veritatis a ut aspernatur.</p>
-                </div>
+              <h1>Project 3</h1>
+              <div class="project-img-container">
+                <img
+                  src="view/images/project_img"
+                  alt="proejct img"
+                  width="200px"
+                  height="200px"
+                />
+              </div>
+              <div class="project-description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet velit aliquid hic illum vero quis maxime perferendis
+                  voluptates odit quidem, ipsam esse nisi consequatur suscipit
+                  molestiae veritatis a ut aspernatur.
+                </p>
+              </div>
             </div>
-        </div>
-      </section>
-      <section class="interests">
-        <h1>Interests</h1>
-        <div class="interests-container">
+          </div>
+        </section>
+        <section class="interests">
+          <h1 class="title">interest</h1>
+          <div class="interests-container">
             <div class="interests-cs-container">
-                <ul class="interest cs">
-                    <li><i class="fas fa-window-maximize"></i>&nbsp Web Development</li>
-                    <li><i class="fas fa-mobile-alt"></i>&nbsp Mobile App Development</li>
-                    <li><i class="fas fa-database"></i>&nbsp Data Science</li>
-                </ul>
+              <ul class="interest cs">
+                <li>
+                  <i class="fas fa-window-maximize"></i>&nbsp Web Development
+                </li>
+                <li>
+                  <i class="fas fa-mobile-alt"></i>&nbsp Mobile App Development
+                </li>
+                <li><i class="fas fa-database"></i>&nbsp Data Science</li>
+              </ul>
             </div>
             <div class="interests-general-container">
-                <ul class="interest general">
-                    <li><i class="fas fa-film"></i>&nbsp Movies</li>
-                    <li><i class="fas fa-headphones-alt"></i>&nbsp Music</li>
-                    <li><i class="fas fa-dog"></i>&nbsp Doggies</li>
-                    <li><i class="fas fa-camera"></i>&nbsp Phtography</li>
-                </ul> 
+              <ul class="interest general">
+                <li><i class="fas fa-film"></i>&nbsp Movies</li>
+                <li><i class="fas fa-headphones-alt"></i>&nbsp Music</li>
+                <li><i class="fas fa-dog"></i>&nbsp Doggies</li>
+                <li><i class="fas fa-camera"></i>&nbsp Phtography</li>
+              </ul>
             </div>
-        </div>
-    </section>
-      <section class="contact">
-      </section>
-    </main>
-    <footer>
-      &copy; 2020 Jiye Choi
-      <ul class="footer-icons">
-        <li><i class="fab fa-facebook-square"></i></li>
-        <li><i class="fab fa-github-square"></i></li>
-        <li><i class="fab fa-instagram-square"></i></li>
-        <li><i class="fas fa-at"></i></li>
-        <li><i class="fab fa-linkedin"></i></li>
-      </ul>
-    </footer>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact-container">
+            <div class="contact-left">
+              <h1 class="title">
+                Contact
+              </h1>
+              <p>I am happy to hear from you!</p>
+              <div class="form-btn-container">
+                <p>Resume</p>
+                <a
+                  href="src/JIYE CHOI RESUME____.pdf"
+                  download="Jiye_Choi_Resume"
+                  ><button type="button" class="form-resume-download-btn">
+                    <i class="fas fa-download"></i>&nbsp Download Resume
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="contact-right">
+              <form class="contact-form">
+                <input
+                  type="text"
+                  class="form-input"
+                  id="name"
+                  name="name"
+                  placeholder="Name*"
+                  required
+                /><br />
+                <input
+                  type="text"
+                  class="form-input"
+                  id="email"
+                  name="email"
+                  placeholder="Email*"
+                  required
+                /><br />
+                <textarea
+                  class="form-input"
+                  name="message"
+                  id="message"
+                  rows="10"
+                  cols="30"
+                  placeholder="Message*"
+                  required
+                ></textarea
+                ><br />
+                <button type="submit" class="form-input" id="submit-btn">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        &copy; 2020 Jiye Choi
+        <ul class="footer-icons">
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-github-square"></i></li>
+          <li><i class="fab fa-instagram-square"></i></li>
+          <li><i class="fas fa-at"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
